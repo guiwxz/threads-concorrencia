@@ -1,16 +1,20 @@
 /**
  * Implementação da classe CD e suas funcionalidades
- * @author Giovani B. Pinzetta & Guilherme Manfroi
+ * @author Giovani B. Pinzetta e Guilherme Manfroi
  * @version 1.0
  * @since 2021
  * 
  */
-
 public class CD {
     private Integer id;
     private Integer tempo;
     private Integer contagem;
     
+    /**
+     * 
+     * @param id the id to set
+     * @param tipo the tipo to set
+     */
     public CD(Integer id, Integer tipo){
         this.id = id;
         //se o disco é do tipo 0, ele vai ter um tempo de 5 a 7, se for outro tipo terá tempo de 9 a 12
@@ -54,7 +58,7 @@ public class CD {
     }
 
     /**
-     * @param contagem the contagem to set
+     * Incrementa contagem
      */
     public void somaContagem() {
         this.contagem++; //acrescenta 1 na contagem do disco, toda vez que ele é ouvido

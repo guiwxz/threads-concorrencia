@@ -5,12 +5,11 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 /**
  * Implementação da classe Aluno e suas funcionalidades
- * @author Giovani B. Pinzetta & Guilherme Manfroi
+ * @author Giovani B. Pinzetta e Guilherme Manfroi
  * @version 1.0
  * @since 2021
  * 
  */
-
 public class Aluno implements Runnable {
 
     private Integer alunoId;
@@ -21,6 +20,12 @@ public class Aluno implements Runnable {
     private Integer faltamCDs;
     List<Integer> listDados;
 
+    /**
+     * 
+     * @param array set ArrayBlockingQueue array param
+     * @param id set id for Aluno
+     * @param listaDados set listaDados param
+     */
     public Aluno(ArrayBlockingQueue<CD> array, Integer id, List<Integer> listaDados) {
       this.array = array;
       this.tempoDecorrido = 0;
@@ -30,6 +35,9 @@ public class Aluno implements Runnable {
       listDados = listaDados;
     }
 
+    /**
+     * Method run to run the thread
+     */
     @Override
     public void run() {
         while (listaAssistidos.size() < 10) { //fica no loop até o aluno ter escutado 10 discos

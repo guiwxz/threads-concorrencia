@@ -4,15 +4,18 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 /**
  * Implementação do método Main e inicialização das threads dos alunos
- * @author Giovani B. Pinzetta & Guilherme Manfroi
+ * @author Giovani B. Pinzetta e Guilherme Manfroi
  * @version 1.0
  * @since 2021
  * 
  */
-
-
 public class MainProject {
 
+    /**
+     * 
+     * @param args set the param args
+     * @throws InterruptedException throws InterruptedException if an error occurs
+     */
   public static void main(String[] args) throws InterruptedException {
     ArrayBlockingQueue<CD> array = new ArrayBlockingQueue<CD>(20);
 
